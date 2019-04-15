@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: t02-annotations
+  annotations:
+    an01: v01
+    an02: v02
+spec:
+  containers:
+    - name: nx-ctrl
+      image: nginx:1.12
