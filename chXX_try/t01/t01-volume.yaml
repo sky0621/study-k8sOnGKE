@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: t01-volume
+spec:
+  containers:
+    - name: go-app
+      image: xxx
+      volumeMounts:
+        - mountPath: /cache
+          name: c-vol
+  volumes:
+    - name: c-vol
+      emptyDir: {}
