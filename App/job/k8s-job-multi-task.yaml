@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: go-app-job-multi-task
+spec:
+  completions: 3
+  parallelism: 5
+  backoffLimit: 1
+  template:
+    spec:
+      containers:
+        - name: go-app-job
+          image: gcr.io/fs-work-1978/go-app-job
+      restartPolicy: Never

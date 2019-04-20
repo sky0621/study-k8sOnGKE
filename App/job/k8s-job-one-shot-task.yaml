@@ -1,8 +1,11 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: go-app-job
+  name: go-app-job-one-shot-task
 spec:
+  completions: 1
+  parallelism: 1
+  backoffLimit: 1
   template:
     spec:
       containers:
