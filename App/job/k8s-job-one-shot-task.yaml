@@ -10,5 +10,5 @@ spec:
     spec:
       containers:
         - name: go-app-job
-          image: gcr.io/fs-work-1978/go-app-job
+          image: gcr.io/${PROJECT_ID}/go-app-job
       restartPolicy: Never

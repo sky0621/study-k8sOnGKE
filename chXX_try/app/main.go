@@ -8,7 +8,7 @@ import (
 
 func main() {
 	e := echo.New()
-	e.GET("/sample", func(c echo.Context) error {
+	e.GET("/sample2", func(c echo.Context) error {
 		return c.JSON(
 			http.StatusOK,
 			struct {
