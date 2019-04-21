@@ -10,5 +10,5 @@ $ gcloud builds submit --config cloudbuild.yaml .
 
 # Jobデプロイ
 <pre>
-$ gcloud builds submit --config cloudbuild.yaml .
+$ kubectl apply -f k8s-cronjob.yaml
 </pre>

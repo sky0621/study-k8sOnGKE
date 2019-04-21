@@ -88,5 +88,5 @@ ID                                    CREATE_TIME                DURATION  SOURC
 
 # Jobデプロイ
 <pre>
-$ gcloud builds submit --config cloudbuild.yaml .
+$ kubectl apply -f k8s-job.yaml
 </pre>
