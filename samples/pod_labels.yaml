@@ -1,0 +1,33 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-labels-01a
+  labels:
+    app: sample-01a
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:1.12
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-labels-02a
+  labels:
+    app: sample-02a
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:1.12
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-labels-03a
+  labels:
+    app: sample-01a
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:1.12

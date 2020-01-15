@@ -4,3 +4,4 @@
 ## [リソース使用量](./COMMAND/top.md)
 ## [コマンド実行](./COMMAND/cmd.md)
 ## [ログ確認](./COMMAND/log.md)
+## [設定](./COMMAND/config.md)
