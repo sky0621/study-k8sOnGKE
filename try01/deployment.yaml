@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: golang-app-try01
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: golang-app-try01
+  template:
+    metadata:
+      labels:
+        app: golang-app-try01
+    spec:
+      containers:
+        - name: golang-app-try01
+          image: gcr.io/MY_GCP_PROJECT_ID/golang-app-try01
+          ports:
+            - containerPort: 8080
